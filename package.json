@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "jest-config": "^25.1.0"
   }
 }
