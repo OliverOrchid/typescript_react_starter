@@ -1,0 +1,27 @@
+/* 
+添加样式
+通过我们的设置为一个组件添加样式很容易。 若要设置Hello组件的样式，
+我们可以创建这样一个CSS文件src/components/Hello.css。
+*/
+
+.StyleOfHello {
+    text-align: center;
+    margin:20px;
+    font-size: 48px;
+    font-family: 'Verdana',Tahoma,Geneva,sans-serif;
+}
+
+.StyleOfHello button{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 40px;
+    min-width: 50px;
+}
+
+/*
+create-react-app包含的工具（Webpack和一些加载器）允许我们导入样
+式表文件。 当我们构建应用的时候，所有导入的.css文件会被拼接成一个输出
+文件。 
+因此在src/components/Hello.tsx，我们需要添加如下导入语句。
+import './Hello.css';  详见该文件
+*/
