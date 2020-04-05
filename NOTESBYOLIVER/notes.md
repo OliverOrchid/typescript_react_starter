@@ -29,19 +29,17 @@ extrapolate [ɪkˈstræpəleɪt]  vt. 类推 , 外推,推断
 credit vt.  感谢声明; 归功于；赞颂
 ```
 
-> 酶（enzyme）是由活细胞产生的、对其底物具有高度特异性和高度催化效能的[蛋白质](https://baike.baidu.com/item/%E8%9B%8B%E7%99%BD%E8%B4%A8/309120)或[RNA](https://baike.baidu.com/item/RNA/98142) ,属于生物催化剂
+
+
+> 酶（enzyme）是由活细胞产生的、对其底物具有专一性和催化效果的[蛋白质](https://baike.baidu.com/item/%E8%9B%8B%E7%99%BD%E8%B4%A8/309120)或[RNA](https://baike.baidu.com/item/RNA/98142) ,属于生物催化剂
 
 
 
-
-
-## STH  NEED TO KNOW
+## 在此项目中你会学习如下知识点
 
 > 部分资料源自博主大神, 将会奉上相关网址
 
-
-
-这篇快速上手指南会教你如何将TypeScript与React结合起来使用。 在最后，你将学到：
+这篇指南旨在教你如何将TypeScript与React结合起来使用。 在最后，你将学到：
 
 - 使用TypeScript和React创建工程
 
@@ -53,41 +51,28 @@ credit vt.  感谢声明; 归功于；赞颂
   >
   > 如果真的想要深入探究PCWebApp项目的生命周期的"测试环节",建议通过Google搜寻最新的更为完善更有发展前景的的测试工具集 , 不一定非要使用"Jest+Enzyme"工具集即不要一棵树上吊死... ...
   >
-  > 
-  >
-  > 下面
-  >
-  > 
 
 - 使用Redux管理 States变量
 
-我们会使用create-react-app工具快速搭建工程环境。
 
-这里假设你已经在使用Node.js和npm。 并且已经了解了React的基础知识
 
 
 
 ## 1# Typescript + React 的项目初始化 基础知识#
 
+> 我们会使用create-react-app工具快速搭建工程环境。这里假设你已经在使用Node.js和npm。 并且已经了解了React的基础知识。
+>
 > If you've previously installed `create-react-app` globally via `npm install -g create-react-app`, we recommend you uninstall the package using `npm uninstall -g create-react-app` to ensure that `npx` always uses the latest version.
 
 
 
-### Get Started Immediately
-
-You **don’t** need to install or configure tools like webpack or Babel. They are preconfigured and hidden so that you can focus on the code.
-
-Create a project, and you’re good to go.
-
-
-
-### [#](https://create-react-app.dev/docs/getting-started/#creating-an-app)Creating an App
+### （1）Creating an App By Default
 
 **You’ll need to have Node >= 8.10 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
 
 To create a new app, you may choose one of the following methods:
 
-#### [#](https://create-react-app.dev/docs/getting-started/#npx)npx
+#### 1>npx
 
 ```
 npx create-react-app my-app
@@ -95,7 +80,7 @@ npx create-react-app my-app
 
 *(npx comes with npm 5.2+ and higher, see instructions for older npm versions)*
 
-#### [#](https://create-react-app.dev/docs/getting-started/#npm)npm
+#### 2>npm
 
 ```
 npm init react-app my-app
@@ -103,19 +88,17 @@ npm init react-app my-app
 
 *npm init <initializer> is available in npm 6+*
 
-#### [#](https://create-react-app.dev/docs/getting-started/#yarn)Yarn
+#### 3>yarn
 
 ```
 yarn create react-app my-app
 ```
 
-*yarn create is available in Yarn 0.25+*
+> *yarn create is available in Yarn 0.25+*
 
 
 
-
-
-### #Selecting a template
+### (2)Creating an App  With  template
 
 You can now optionally start a new app from a template by appending `--template [template-name]` to the creation command.
 
@@ -131,7 +114,7 @@ npx create-react-app my-app --template [template-name]
 
 Our [Custom Templates](https://create-react-app.dev/docs/custom-templates) documentation describes how you can build your own template.
 
-### [#](https://create-react-app.dev/docs/getting-started/#creating-a-typescript-app)Creating a TypeScript app
+#### 1>Creating a TypeScript app
 
 You can start a new TypeScript app using templates. To use our provided TypeScript template, append `--template typescript` to the creation command.
 
@@ -141,7 +124,7 @@ npx create-react-app my-app --template typescript
 
 If you already have a project and would like to add TypeScript, see our [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript) documentation.
 
-### [#](https://create-react-app.dev/docs/getting-started/#selecting-a-package-manager)Selecting a package manager
+#### 2>（可选操作）Selecting a package manager
 
 When you create a new app, the CLI will use [Yarn](https://yarnpkg.com/) to install dependencies (when available). If you have Yarn installed, but would prefer to use npm, you can append `--use-npm` to the creation command. For example:
 
@@ -777,6 +760,56 @@ jest-puppeteer 是一个同时包含 Jest 和 Puppeteer 的工具, 一款E2E测�
 
 
 
- 
+## 12#何为“void”?
+
+void  ['vɔɪd]  
+
+- n. 空间；空白；
+- adj.  [计算机]无类型的 ； 无效的；空的；无人（居住）的；缺乏的  
+- v. 使无效 , 无效化
 
  
+
+网络释义:
+
+> 无效的
+>
+> e.g. 合同可以是无效(**VOID**)的，也可以半**无效的**(VOIDABLE)
+
+短语
+
+> Dark Void 黑暗虚空 ; 黑暗虚无 ; 黑暗空隙 ; 暗黑空隙
+>
+> void marriage 无效婚姻 ; 
+>
+> air void 孔隙率 ; 气穴 ; 含气率 ; 
+>
+> void of adj. 没有的，缺乏的；没有…的
+>
+> void fraction 空隙率；空隙分数；空隙组分
+>
+> void ratio 孔隙比；空隙比
+>
+> void content 空隙度；孔隙量；孔隙容积；空孔率，空洞率
+>
+> void space 孔隙空间，空隙空间
+
+
+
+---
+
+
+
+ 中文翻译为“无类型”。在程序开发过程中用来声明： 函数形参类型（ 例如 pointer） 、 函数返回值类型（ 即 函数类型） 等等。
+
+
+
+void的字面含义是“无类型的”
+
+> 示例如下：
+>
+>  void * 是指“无类型的指针”，故而规定 它可以指向 任何类型的变量。
+
+
+
+## 13#待补充！
